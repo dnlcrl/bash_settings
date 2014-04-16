@@ -15,9 +15,9 @@ PS1='\h:\W \u\$ '  # Default
 
 CURRENTUSER=`whoami`
 if [ "$CURRENTUSER" = "root" ]; then
-  PS1='\[\e[0;31m\]\h:\W \u\n\$ \[\e[0m\] '
+  PS1='\[\e[0;31m\]\h:\w \u\n\$ \[\e[0m\] '
 else
-  PS1='\[\e[0;32m\]\h:\W \u\n\$ \[\e[0m\]'
+  PS1='\[\e[0;32m\]\h:\w \u\n\$ \[\e[0m\]'
 fi
 
 export PATH=/usr/local/bin:$PATH
